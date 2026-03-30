@@ -6,6 +6,7 @@ import { OrbitControls, useTexture, Stars, Html } from "@react-three/drei";
 function EarthModel() {
   const earthRef = useRef();
   const cloudRef = useRef();
+  const cloudMatRef = useRef();
 
   const [earthMap, cloudMap] = useTexture([
     "/earth.jpg",
@@ -22,11 +23,14 @@ function EarthModel() {
     if (earthRef.current) {
       earthRef.current.rotation.y = time * 0.02;
     }
-    if (cloudRef.current) {
-      if (cameraDistance > 1.8) {
-        cloudRef.current.rotation.y = time * 0.05; 
+    if (cloudRef.current && cloudMatRef.current) {
+      cloudRef.current.rotation.y = time * 0.05;
+
+      if (cameraDistance < 3) {
+        const newOpacity = Math.max(0, (cameraDistance - 2.6) / (2.2 - 2.6) * 0.4);
+        cloudMatRef.current.opacity = newOpacity;
       } else {
-        cloudRef.current.rotation.y = 0; 
+        cloudMatRef.current.opacity = 0.4; 
       }
     }
   });
@@ -45,6 +49,7 @@ function EarthModel() {
       <mesh ref={cloudRef} scale={1.02}>
         <sphereGeometry args={[1.5, 64, 64]} />
         <meshStandardMaterial
+          ref={cloudMatRef}
           map={cloudMap}
           transparent={true}
           opacity={0.3}
