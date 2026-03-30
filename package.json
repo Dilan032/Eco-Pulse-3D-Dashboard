@@ -4,15 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://Dilan032.github.io/Eco-Pulse-3D-Dashboard",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -21,6 +19,7 @@
     "framer-motion": "^12.38.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2",
     "three": "^0.183.2"
   },
   "devDependencies": {
