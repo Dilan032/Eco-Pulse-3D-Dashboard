@@ -10,7 +10,7 @@ body, html {
   width: 100%;
   height: 100%;
   overflow: hidden; /* මේකෙන් scroll bars නැති වෙනවා */
-  background-color: #19ce7d; /* මුළු පිටුවටම එකම පාටක් දෙනවා */
+  /* background-color: #19ce7d; මුළු පිටුවටම එකම පාටක් දෙනවා */
 }
 
 #root {
