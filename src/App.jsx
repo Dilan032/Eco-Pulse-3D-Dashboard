@@ -9,8 +9,8 @@ function EarthModel() {
   const cloudMatRef = useRef();
 
   const [earthMap, cloudMap] = useTexture([
-    "/earth.jpg",
-    "/clouds.png"
+    "./earth.jpg",
+    "./clouds.png"
   ]);
 
   earthMap.anisotropy = 16;
@@ -30,7 +30,7 @@ function EarthModel() {
         const newOpacity = Math.max(0, (cameraDistance - 2.6) / (2.2 - 2.6) * 0.4);
         cloudMatRef.current.opacity = newOpacity;
       } else {
-        cloudMatRef.current.opacity = 0.4; 
+        cloudMatRef.current.opacity = 0.4;
       }
     }
   });
@@ -77,9 +77,9 @@ export default function Scene() {
 
         <OrbitControls
           enableZoom={true}
-          enablePan={false} 
-          minDistance={2.6} 
-          maxDistance={10}  
+          enablePan={false}
+          minDistance={2.6}
+          maxDistance={10}
         />
       </Canvas>
     </div>

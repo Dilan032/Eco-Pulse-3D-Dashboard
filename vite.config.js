@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Eco-Pulse-3D-Dashboard/',
+  define: {
+    'process.env': {} 
+  }
 })
