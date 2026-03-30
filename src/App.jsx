@@ -9,8 +9,8 @@ function EarthModel() {
   const cloudMatRef = useRef();
 
   const [earthMap, cloudMap] = useTexture([
-    "./earth.jpg",
-    "./clouds.png"
+    "earth.jpg",
+    "clouds.png"
   ]);
 
   earthMap.anisotropy = 16;
