@@ -1,16 +1,96 @@
-# React + Vite
+# 🌱 Eco Pulse 3D Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **3D environmental dashboard** built using modern web technologies to visualize sustainability and environmental data in a visually engaging way.
 
-Currently, two official plugins are available:
+This project was developed to explore **data visualization, 3D UI design, and modern frontend development**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🌍 Interactive 3D dashboard interface
+* 📊 Real-time styled data visualization (mock / dynamic data)
+* 📈 Environmental metrics (temperature, air quality, etc.)
+* 🎨 Modern UI with smooth animations
+* ⚡ Responsive and user-friendly design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* React.js
+* Three.js / 3D libraries
+* Tailwind CSS / CSS
+* JavaScript 
+
+---
+
+## 📚 What I Learned
+
+* Building interactive dashboards
+* Working with 3D elements in web applications
+* Data visualization techniques
+* UI/UX design for complex data
+* Structuring scalable frontend projects
+
+---
+
+## ⚙️ How It Works
+
+The dashboard presents environmental data through interactive components and 3D visuals.
+Users can view different metrics and insights in a visually intuitive format, improving understanding of complex data.
+
+---
+
+## ⚠️ Project Status
+
+🚧 This project is still under development and will be improved further.
+
+---
+
+## 🔮 Future Improvements
+
+* [ ] Connect real-time APIs (weather, AQI)
+* [ ] Improve 3D animations and performance
+* [ ] Add backend integration
+
+---
+
+## 📦 Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Dilan032/Eco-Pulse-3D-Dashboard.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd Eco-Pulse-3D-Dashboard
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the app
+
+```bash
+npm start
+```
+
+---
+
+## 👨‍💻 Author
+
+* Dilan Kanishka
+* GitHub: https://github.com/Dilan032
+
+---
+
+## ⭐ Note
+
+This project was built as part of my learning journey in modern frontend development, focusing on **3D visualization and interactive dashboards**.
